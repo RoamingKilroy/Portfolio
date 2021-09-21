@@ -18,7 +18,6 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
         <a href="#" class="navbar-brand">Zachary Kilroy</a>
-
         <button 
         class="navbar-toggler" 
         type="button"
@@ -35,7 +34,10 @@
                 </li>
                 <li class="nav-item">
                     <a href="#aboutme" class="nav-link">About Me</a>
-                </li>          
+                </li> 
+                <li class="nav-item">
+                  <a href="#projects" class="nav-link">Projects</a>
+                </li>            
                 <li class="nav-item">
                     <a href="#findmore" class="nav-link">Find Out More</a>
                 </li>
@@ -49,14 +51,15 @@
 
     <!-- Showcase -->
     <section id="aboutme" class="bg-dark text-light p-5 text-center">
-        <div class="container">
-            <a href="" class="navbar-brand"></a>
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
             <div class="d-sm-flex">
                 <div>
                     <h1>About Me
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at erat faucibus, molestie magna nec, hendrerit ante.
+                      My name is Zachary Kilroy. I am a Marine Corps veteran. During my five years in the service I was stationed in many different location to include Japan.
+                      I started a coding bootcamp in 2021 with the hope to further develop my skills in the computer and technology field.
                     </p>
                 </div>
                 <div>
@@ -64,10 +67,63 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
+    <!-- Projects -->
+    <section id="projects" class="p-5 bg">
+      <div class="container">
+        <h2 class="text-center text-black">Upcoming and Most Recent Projects</h2>
+        <p class="lead text-center text-black mb-5">
+          Here are some past and present projects of mine.
+        </p>
+        <div class="row g-3">
+          <div class="col-md">
+            <div class="card bg-dark">
+              <div class="card-body text-center">
+                <img
+                  src="img/projectOne.jpg"
+                />
+                  <h3 class="card-title mb-3 text-white">Sales Tracker</h3></a>
+                <p class="card-text text-white">
+                  My first future project goal is to build a sales tracker and customer follow up system to use for my current occupation. This is a must for me to use daily.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="card bg-dark">
+              <div class="card-body text-center">
+                <img
+                  src="img/projectTwo.jpg"
+                />
+                <h3 class="card-title mb-3 text-white">Bug Tracker</h3></a>
+                <p class="card-text text-white">
+                  A personal bug tracker to track issues and requirements for any coding projects I am currently working on. I prefer a standalone tracker as compared to a Kanban board.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md">
+            <div class="card bg-dark">
+              <div class="card-body text-center">
+                <img
+                  src="img/projectThree.jpg"
+                />
+                <a href="https://github.com/RoamingKilroy/RPSLS">
+                  <h3 class="card-title mb-3 text-white">Recent Project</h3></a>
+                <p class="card-text text-white">
+                  Here is my most recent project. It is a rock, paper, scissors, spock, lizard game. This was completed as a part of the curriculum for the coding bootcamp I currently attend.
+                </p>
+              </div>
+            </div>
+          </div>
+  </section>
+
     <!-- Boxed Links -->
-    <section id="findmore" id="instructors" class="p-5 bg-light">
+    <section id="findmore" class="p-5 bg-light">
         <div class="container">
           <h2 class="text-center text-black">Find out more!</h2>
           <p class="lead text-center text-black mb-5">
@@ -85,7 +141,7 @@
                   <a href="https://github.com/RoamingKilroy">
                     <h3 class="card-title mb-3 text-white">Github</h3></a>
                   <p class="card-text text-white">
-                    Check out my Github for past and current projects! I am currently working through a MERN development bootcamp and update Github regularly.
+                    Check out my Github for all of myprojects! I am currently working through a MERN development bootcamp and update Github regularly.
                   </p>
                 </div>
               </div>
@@ -116,7 +172,8 @@
                     class="rounded-circle mb-3"
                     alt=""
                   />
-                  <h3 class="card-title mb-3 text-white">Resume</h3>
+                  <a href="https://drive.google.com/file/d/1otB33Wayo-MRWTHJFQsLQQMfgTwhgqBd/view?usp=sharing">
+                  <h3 class="card-title mb-3 text-white">Resume</h3></a>
                   <p class="card-text text-white">
                     If your here looking because I applied or you are interested in speaking with me as a potential canidate please feel free to download my update resume here!
                   </p>
@@ -124,75 +181,37 @@
               </div>
             </div>
     </section>
-    
+
 <!-- CONTACT -->
-<section id="contactme" class="p-5 bg-dark">
-    <div class="container">
-      <h2 class="text-center text-light">
-          Contact Me
-      </h2>
-    <form id="contact-form" method="post" action="contact.php" role="form">
-        <div class="messages"></div>
-        <div class="controls">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="form_name">Firstname *</label>
-                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="Firstname is required.">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="form_lastname">Lastname *</label>
-                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Lastname is required.">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
+    <!-- Contact & Map -->
+    <section class="p-5 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <h2 class="text-center mb-4 text-white">Contact Info</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Phone:</span> (666) No I'm not publishing my number
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email:</span>
+                kilroy.zachary@gmail.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Discord:</span>
+                RoamingKilroy#7641
+              </li>
+
+            </ul>
+          </div>
+          <div class="col-md">
+            <img class="rounded mx-auto d-block w-75" src="img/hello.jpg" alt="">
+
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="form_email">Email *</label>
-                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="form_need">Please specify your need *</label>
-                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                            <option value=""></option>
-                            <option value="Request quotation">Github Porject Question</option>
-                            <option value="Request order status">Project Request</option>
-                            <option value="Request copy of an invoice">Interview/Resume Question</option>
-                            <option value="Other">Other</option>
-                        </select>
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="form_message">Message *</label>
-                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
-                        <div class="help-block with-errors"></div>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <input type="submit" class="btn btn-success btn-send" value="Send message">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-muted">
-                        <strong>*</strong> These fields are required. And this doesn't work.
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
 </form>
     <script 
