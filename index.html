@@ -9,6 +9,7 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" 
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" 
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">  
     <link rel="stylesheet" href="style.css">
     <title>Zachary Kilroy Portfolio</title>
 </head>
@@ -34,6 +35,9 @@
                 </li>
                 <li class="nav-item">
                     <a href="#aboutme" class="nav-link">About Me</a>
+                </li>          
+                <li class="nav-item">
+                    <a href="#findmore" class="nav-link">Find Out More</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contactme" class="nav-link">Contact Me</a>
@@ -44,23 +48,153 @@
     </nav>
 
     <!-- Showcase -->
-    <section class="bg-dark text-light p-5 text-center">
+    <section id="aboutme" class="bg-dark text-light p-5 text-center">
         <div class="container">
+            <a href="" class="navbar-brand"></a>
             <div class="d-sm-flex">
                 <div>
-                    <h1>Portfolio
+                    <h1>About Me
                     </h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at erat faucibus, molestie magna nec, hendrerit ante.
                     </p>
                 </div>
                 <div>
-                    <img class="img-fluid w-75 h-75" src="img/showcase.svg" alt="">
+                    <img class="rounded mx-auto d-block" src="img/me.png" alt="">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Boxed Links -->
+    <section id="findmore" id="instructors" class="p-5 bg-light">
+        <div class="container">
+          <h2 class="text-center text-black">Find out more!</h2>
+          <p class="lead text-center text-black mb-5">
+            Check out my current projects, LinkedIn, or download my resume.
+          </p>
+          <div class="row g-3">
+            <div class="col-md">
+              <div class="card bg-dark">
+                <div class="card-body text-center">
+                  <img
+                    src="img/GitHub.png"
+                    class="rounded-circle mb-3"
+                    alt=""
+                  />
+                  <a href="https://github.com/RoamingKilroy">
+                    <h3 class="card-title mb-3 text-white">Github</h3></a>
+                  <p class="card-text text-white">
+                    Check out my Github for past and current projects! I am currently working through a MERN development bootcamp and update Github regularly.
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md">
+              <div class="card bg-dark">
+                <div class="card-body text-center">
+                  <img
+                    src="img/linkedin.svg"
+                    class="rounded-circle mb-3"
+                    alt=""
+                  />
+                  <a href="https://www.linkedin.com/in/zachary-kilroy">
+                  <h3 class="card-title mb-3 text-white">LinkedIn</h3></a>
+                  <p class="card-text text-white">
+                    Feel free to head over to my LinkedIn for more information. I keep this updated with my current professional information to add me to your professional network.
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-md">
+              <div class="card bg-dark">
+                <div class="card-body text-center">
+                  <img
+                    src="img/icons8-pdf-96.png"
+                    class="rounded-circle mb-3"
+                    alt=""
+                  />
+                  <h3 class="card-title mb-3 text-white">Resume</h3>
+                  <p class="card-text text-white">
+                    If your here looking because I applied or you are interested in speaking with me as a potential canidate please feel free to download my update resume here!
+                  </p>
+                </div>
+              </div>
+            </div>
+    </section>
+    
+<!-- CONTACT -->
+<section id="contactme" class="p-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center text-light">
+          Contact Me
+      </h2>
+    <form id="contact-form" method="post" action="contact.php" role="form">
+        <div class="messages"></div>
+        <div class="controls">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_name">Firstname *</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="Firstname is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_lastname">Lastname *</label>
+                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Lastname is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_email">Email *</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="form_need">Please specify your need *</label>
+                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                            <option value=""></option>
+                            <option value="Request quotation">Github Porject Question</option>
+                            <option value="Request order status">Project Request</option>
+                            <option value="Request copy of an invoice">Interview/Resume Question</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="form_message">Message *</label>
+                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted">
+                        <strong>*</strong> These fields are required. And this doesn't work.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</form>
     <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" 
